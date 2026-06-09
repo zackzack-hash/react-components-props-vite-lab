@@ -1,11 +1,15 @@
-function About({ name, image, about }) {
+import React from "react";
+
+function About({ 
+  image = "https://via.placeholder.com/215", 
+  about 
+}) {
   return (
-    <div>
-      <img src={image} alt={name} />
-      <h1>{name}</h1>
+    <aside>
+      <img src={image} alt="blog logo" />
       <p>{about}</p>
-    </div>
-  ); 
+    </aside>
+  );
 }
 
 export default About;
